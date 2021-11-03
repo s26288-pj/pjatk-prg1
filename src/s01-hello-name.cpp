@@ -1,13 +1,11 @@
 #include <iostream>
 #include <string>
 
-auto main(int argc, char* argv[]) -> int
+auto main() -> int
 {
-	if (argc == 0) {
-		return 1;
-	}
+	auto name = std::string{};
+	std::getline(std::cin, name);
 	
-	auto const name = std::string{argv[1]};
 	std::cout << "Hello, " << name << "!\n";
 
 	return 0;
