@@ -11,7 +11,7 @@ int main()
 
 	if(cin.fail())
 	{
-		cout << "That's not a number!\n";
+		cout << "That's not a number! \n";
 	}
 	
 	for(int i=1; i <= number; i++)
