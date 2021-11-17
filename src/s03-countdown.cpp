@@ -24,7 +24,7 @@ int main()
 			sleep(1);
 			sec=0;
 		}
-		cout << "Done\n";
+		cout << "Time's up!\n";
 	}
 	return 0;
 }
