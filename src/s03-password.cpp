@@ -8,7 +8,7 @@ int main()
 {
 	while(pass!="student")
 	{
-		cout << "Enter password: ";
+		cout << "Enter your password: ";
 		cin >> pass;
 
 		if(pass=="student")
