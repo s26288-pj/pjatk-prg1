@@ -32,7 +32,7 @@ int main()
 		}
 		else
 		{
-			cout << "Nice guess! You win! \n";
+			cout << "Nice guess - you win! \n";
 		}
 	}
 	return 0;
