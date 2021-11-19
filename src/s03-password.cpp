@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-using namespace std;
 
 std::string pass;
 
@@ -8,20 +7,20 @@ int main()
 {
 	while(pass!="student")
 	{
-		cout << "Enter password: ";
-		cin >> pass;
+		std::cout << "Enter password: ";
+		std::cin >> pass;
 
 		if(pass=="student")
 		{
-			cout << "\nPassword accepted. Welcome back student. \n";
+			std::cout << "\nPassword accepted. Welcome back student. \n";
 		}
 		else if(pass.length() > 0) 
 		{
-			cout << "Error. Try again. \n";
+			std::cout << "Error. Try again. \n";
 		}	
 		else 
 		{
-			cout << "Password can't be empty! Try again.\n";
+			std::cout << "Password can't be empty! Try again.\n";
 		}
 	}
 	return 0;
