@@ -1,30 +1,28 @@
 #include <iostream>
 #include <unistd.h>
 
-using namespace std;
-
 int sec;
 
 int main()
 {
-	cout << "Number of seconds: \n";
-	cin >> sec;
-	cout << endl;
-	if(cin.fail())
+	std::cout << "Number of seconds: \n";
+	std::cin >> sec;
+	std::cout << std::endl;
+	if(std::cin.fail())
 	{	
-		cout << "That's not a number!\n";
+		std::cout << "That's not a number!\n";
 	}
 
 	while(sec)
 	{
 		for(int i=sec; i >= 0; i--)
 		{
-			cout << i;
-			cout << "...\n";
+			std::cout << i;
+			std::cout << "...\n";
 			sleep(1);
 			sec=0;
 		}
-		cout << "Time is up!\n";
+		std::cout << "Time is up!\n";
 	}
 	return 0;
 }
