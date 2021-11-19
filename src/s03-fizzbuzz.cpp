@@ -1,22 +1,21 @@
 #include <iostream>
 #include <string>
-using namespace std;
 
 int number;
 
 int main()
 {
-	cout << "Enter a number: ";
-	cin >> number;
+	std::cout << "Enter a number: ";
+	std::cin >> number;
 
-	if(cin.fail())
+	if(std::cin.fail())
 	{
-		cout << "That's not a number! \n";
+		std::cout << "That's not a number! \n";
 	}
 	
 	for(int i=1; i <= number; i++)
 	{
-		string text = "";
+		std::string text = "";
 		if(i%3==0)
 		{
 			text += "Fizz";
@@ -26,7 +25,7 @@ int main()
 			text += "Buzz";
 		}
 		 
-		cout << i << " " << text << "\n";
+		std::cout << i << " " << text << "\n";
 	}
 	return 0;
 }
