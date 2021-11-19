@@ -1,5 +1,4 @@
 #include <iostream>
-using namespace std;
 
 int number;
 int random_number;
@@ -8,31 +7,31 @@ int main()
 {
 	srand((unsigned)time(0));
 	random_number = (rand() % 100) + 1;
-	cout << "Guess the number: \n";
+	std::cout << "Guess the number: \n";
 
 	while(number != random_number)
 	{
-		cin >> number;
+		std::cin >> number;
 		
 		if(number != random_number)
 		{
-			if(cin.fail())
+			if(std::cin.fail())
 			{	
-				cout << "That's not a number!\n";\
+				std::cout << "That's not a number!\n";\
 				break;
 			}
 			else if(number < random_number)
 			{
-				cout << "Wrong! Your number is lower than ours. \n";
+				std::cout << "Wrong! Your number is lower than ours. \n";
 			}
 			else 
 			{
-				cout << "Wrong! Your number is higher than ours. \n";
+				std::cout << "Wrong! Your number is higher than ours. \n";
 			}
 		}
 		else
 		{
-			cout << "Nice guess - you win! \n";
+			std::cout << "Nice guess - you win! \n";
 		}
 	}
 	return 0;
